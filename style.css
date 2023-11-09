@@ -117,6 +117,11 @@ input {
   font-size: var(--fs-sm);
   line-height: 1.43em;
 }
+.resume__title, .skills__title{
+	color: var(--text-color-alt);
+	letter-spacing: 0.4em;
+	margin-bottom: 2.8em;
+}
 /* ----------------- Header ----------------- */
 
 .header {
@@ -284,11 +289,7 @@ input {
   grid-template-columns: repeat(2, 1fr);
 	column-gap: 3.75rem;
 }
-.resume__title{
-	color: var(--text-color-alt);
-	letter-spacing: 0.4em;
-	margin-bottom: 2.8em;
-}
+
 .resume__item{
 	border-left: 2px solid var(--primary-color);
 	padding-left: 1.6rem;
@@ -317,4 +318,28 @@ input {
 }
 .resume__description{
 	text-align: justify;
+}
+/* ----------------- Skills ----------------- */
+.skills__container{
+	grid-template-columns: repeat(2, 445px);
+	column-gap: 7rem;
+}
+.skills__list{
+	row-gap: 1.8rem;
+}
+.skills__title{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.625rem;
+}
+.skills__bar,.skills__percentage{
+	height: 5px;
+	border-radius: 0.25rem;
+}
+.skills__bar{
+	background-color: var(--bg-color-alt);
+}
+.skills__percentage{
+	display: block;
+	background-color: var(--primary-color);
 }
