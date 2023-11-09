@@ -1,0 +1,36 @@
+/* ----------------- Google fonts ----------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+/* ----------------- Css variables ----------------- */
+
+:root {
+  --header-height: 3.5rem;
+  /*------ Colors -------- */
+  --primary-color: #4a4a4a;
+  --primary-color-alt: #575757;
+  --linear-gradient: linear-gradient(
+    54deg,
+    rgba(45, 45, 45, 0.95) 34%,
+    rgba(45, 45, 45, 0.95)
+  );
+  --title-color: #4a4a4a;
+	--text-color:#555;
+	--text-color-alt:#999;
+	--bg-color: #fff;
+	--bg-color-alt: #e9ecef;
+	--border-color: #f1f1f1;
+	/*------ Fonts and typografy -------- */
+	--roboto-font:'Roboto', sans-serif;
+	--mono-font: 'Roboto Mono', monospace;
+	--fs-h1: 2.75rem;
+	--fs-h2: 2.25rem;
+	--fs-lg: 1.125rem;
+	--fs-base: 1rem;
+	--fs-sm: 0.857rem;
+	--fs-xs: 0.75rem;
+	/*------ Fonts weight -------- */
+	--medium: 500;
+	--semibold: 600;
+	--bold: 700;
+}
