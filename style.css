@@ -99,6 +99,24 @@ input {
 .grid {
   display: grid;
 }
+.section{
+	padding-top: 3.75rem;
+	padding-bottom: 3.75rem;
+}
+.section__title{
+	font-size: var(--fs-h2);
+	line-height: 1.17em;
+	font-weight: var(--medium);
+	margin-bottom: 1.12em;
+}
+.text-lg{
+	font-size: var(--fs-lg);
+	line-height: 1.67em;
+}
+.text-sm{
+	font-size: var(--fs-sm);
+	line-height: 1.43em;
+}
 /* ----------------- Header ----------------- */
 
 .header{
@@ -162,6 +180,7 @@ input {
   background-size: cover;
   background-position: 50%;
   padding-top: 5.5rem;
+	margin-bottom: 2.5rem;
   position: relative;
 }
 
@@ -234,4 +253,28 @@ input {
 }
 .home__socials-link:hover{
 	opacity: 1;
+}
+
+/* ----------------- Hello ----------------- */
+.hello__details{
+	margin-bottom: 1.67em;
+	text-align: justify;
+}
+/* -----------------Btns ----------------- */
+.button{
+	display: inline-block;
+	background-color: var(--primary-color);
+	color: #fff;
+	padding: 1.1em 2.1em;
+	border-radius: 1.53rem;
+	font-weight: var(--semibold);
+	transition: 0.3s;
+}
+.button:hover{
+	background-color: var(--primary-color-alt);
+}
+.button-flex{
+	display: inline-flex;
+	align-items: flex-start;
+	column-gap: 0.3rem;
 }
