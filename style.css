@@ -57,32 +57,124 @@ body {
   line-height: 1.5em;
 }
 
-h1,h2,h3{
-	font-family: var(--mono-font);
-	font-weight: var(--bold);
+h1,
+h2,
+h3 {
+  font-family: var(--mono-font);
+  font-weight: var(--bold);
 }
 
-ul{
-	list-style: none;
+ul {
+  list-style: none;
 }
 
-a{
-	text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-button{
-	cursor: pointer;
-	background: none;
-	border: none;
-	outline: none;
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
 }
 
-img{
-	min-width: 100%;
-	height: auto;
+img {
+  height: auto;
 }
-textarea,input{
-	background: none;
-	border: none;
-	outline: none;
+textarea,
+input {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* ----------------- Reuse Css ----------------- */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0.9rem;
+  padding-right: 0.9rem;
+}
+.grid {
+  display: grid;
+}
+/* ----------------- Home ----------------- */
+.home {
+  background: url(./images/home.JPG);
+  background-size: cover;
+  background-position: 50%;
+  padding-top: 5.5rem;
+  position: relative;
+}
+
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--linear-gradient);
+}
+.home__container {
+  grid-template-columns: 4fr 8fr;
+  column-gap: 1.875rem;
+}
+.home__img,
+.home__data {
+  z-index: 10;
+}
+.home__img {
+  width: 90%;
+  height: 380px;
+  object-fit: cover;
+	object-position: 35% 65%;
+  border-radius: 0.3rem;
+  transform: translateY(3.125rem);
+  box-shadow: 0 0 27px rgb(96, 96, 96 / 34%);
+}
+
+.home__name,
+.home__work,
+.home__list,
+.home__socials {
+  color: #fff;
+  font-family: var(--mono-font);
+}
+.home__name {
+  font-size: var(--fs-h1);
+  line-height: 1.14em;
+  margin: 0.9em 0 0.23em;
+}
+.home__work {
+  margin-bottom: 2.5em;
+}
+
+.home__list dt {
+  float: left;
+  font-weight: var(--bold);
+  opacity: 0.4;
+}
+.home__list dd {
+  padding-left: 6.25em;
+}
+
+.home__list dd:not(:last-child) {
+  margin-bottom: 0.94em;
+}
+
+.home__socials {
+  margin: 1.25rem 0 2.2rem;
+}
+.home__socials-link {
+  font-size: 1.7rem;
+	line-height: 1.36em;
+	margin-right: 0.25rem;
+	opacity: 0.4;
+	transition: 0.3s;
+	color: #fff;
+}
+.home__socials-link:hover{
+	opacity: 1;
 }
