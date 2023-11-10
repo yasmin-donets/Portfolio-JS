@@ -358,6 +358,7 @@
                 <div class="contact__input-div">
                   <input
                     type="text"
+                    name="name"
                     name="Your name"
                     class="contact__input"
                     id="contact-name"
@@ -366,6 +367,7 @@
                 <div class="contact__input-div">
                   <input
                     type="email"
+                    name="email"
                     name="Your e-mail"
                     class="contact__input"
                     id="contact-email"
@@ -374,11 +376,12 @@
                 <div class="contact__input-div">
                   <textarea
                     placeholder="Type the message here"
-                    name=""
+                    name="message"
                     id="message"
                     cols="30"
                     rows="10"
                     class="contact__input textarea"
+                    name="message"
                   ></textarea>
                 </div>
                 <p class="contact__message text-sm" id="contact-message">
@@ -396,6 +399,11 @@
         </div>
       </section>
     </main>
+    <!-- --------------------- EMAIl JS ----------------------------- -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <!-- --------------------- JS ----------------------------- -->
     <script src="./app.js"></script>
   </body>

@@ -552,3 +552,9 @@ input {
   margin-top: 3.75rem;
   text-align: center;
 }
+.color-light{
+  opacity: 1;
+}
+.color-dark{
+  opacity: 0.4;
+}
