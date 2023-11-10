@@ -29,7 +29,7 @@ const projects = [
 
 const projectCategories = document.querySelector('.project__categories');
 const projectContainer = document.querySelector('.project__container');
-//console.log(projectCategories);
+const categoryBtns = document.querySelectorAll('.category__btn');
 
 //Adding event listener
 window.addEventListener('DOMContentLoaded', function () {
@@ -68,10 +68,22 @@ function displayProjects(projectItems) {
     .join('');
   projectContainer.innerHTML = displayItems;
 }
+
+// function adding active-work
+categoryBtns.forEach((button) => {
+  button.addEventListener('click', () => {
+    // Remove 'active-work' class from all buttons
+    categoryBtns.forEach((btn) => {
+      btn.classList.remove('active-work');
+    });
+
+    // Add 'active-work' class to the clicked button
+    button.classList.add('active-work');
+  });
+});
 // function filter
 
-const categyBtns = document.querySelectorAll('.category__btn');
-categyBtns.forEach((btn) => {
+categoryBtns.forEach((btn) => {
   btn.addEventListener('click', (e) => {
     const filterCategory = e.currentTarget.dataset.filter;
     const projectCategory = projects.filter((projectItem) => {
