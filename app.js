@@ -27,7 +27,7 @@ const projects = [
 
 // selecting elements
 
-const projectCategories = document.querySelector('.project__categories');
+
 const projectContainer = document.querySelector('.project__container');
 const categoryBtns = document.querySelectorAll('.category__btn');
 
@@ -35,7 +35,7 @@ const categoryBtns = document.querySelectorAll('.category__btn');
 window.addEventListener('DOMContentLoaded', function () {
   displayProjects(projects);
 });
-//projectCategories.addEventListener('click', filterCategories);
+
 
 // display Projects
 function displayProjects(projectItems) {
@@ -82,15 +82,15 @@ categoryBtns.forEach((btn) => {
     // Add 'active-work' class to the clicked button
     btn.classList.add('active-work');
 
-    const projectCategory = projects.filter((projectItem) => {
-      if (projectItem.category === filterCategory) {
-        return projectItem;
-      }
-    });
-    if (filterCategory === 'all') {
-      displayProjects(projects);
-    } else {
-      displayProjects(projectCategory);
-    }
+    // Filter projects based on the selected category
+    const filteredProjects =
+      filterCategory === 'all'
+        ? projects
+        : projects.filter(
+            (projectItem) => projectItem.category === filterCategory
+          );
+
+    // Display the filtered projects
+    displayProjects(filteredProjects);
   });
 });
