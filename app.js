@@ -69,23 +69,19 @@ function displayProjects(projectItems) {
   projectContainer.innerHTML = displayItems;
 }
 
-// function adding active-work
-categoryBtns.forEach((button) => {
-  button.addEventListener('click', () => {
-    // Remove 'active-work' class from all buttons
-    categoryBtns.forEach((btn) => {
-      btn.classList.remove('active-work');
-    });
-
-    // Add 'active-work' class to the clicked button
-    button.classList.add('active-work');
-  });
-});
-// function filter
+// function filter and add active-work
 
 categoryBtns.forEach((btn) => {
   btn.addEventListener('click', (e) => {
     const filterCategory = e.currentTarget.dataset.filter;
+    // Remove 'active-work' class from all buttons
+    categoryBtns.forEach((button) => {
+      button.classList.remove('active-work');
+    });
+
+    // Add 'active-work' class to the clicked button
+    btn.classList.add('active-work');
+
     const projectCategory = projects.filter((projectItem) => {
       if (projectItem.category === filterCategory) {
         return projectItem;
