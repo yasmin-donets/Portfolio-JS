@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yasmin Donets - front-end developer</title>
+    <!-- ---------------------Remixicons----------------------------- -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- ---------------------CSS link----------------------------- -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- --------------------- Header ----------------------------- -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="nav__menu" id="nav__menu">
+          <ul class="nav__list">
+            <li>
+              <a href="#home" class="nav__link">Hello</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- --------------------- Blog Details ----------------------------- -->
+    <div class="blog__header"></div>
+    <section class="container">
+      <div class="blog__details">
+        <a href="" class="back__to-home text-xs"
+          ><i class="ri-arrow-left-line"></i
+        ></a>
+
+        <h3 class="post__details-title">BEM by Example</h3>
+        <p class="post__details-date text-sm">November 22, 2023</p>
+        <p class="post__details text-lg">
+          BEM is a popular naming convention for CSS class names that we use
+          widely here at Sparkbox. The fundamental concepts of BEM are simple
+          and straightforward, but there are common errors those new to BEM make
+          that this post seeks to explain through a series of examples. On
+          smaller brochure sites, how you organize your styles isn’t usually a
+          big concern. You get in there, write some CSS, or maybe even some
+          SASS. You compile it all into a single stylesheet with SASS’s
+          production settings, and then you aggregate it to get all the
+          stylesheets from modules into a nice tidy package. However, when it
+          comes to larger, more complex projects, how you organize your code is
+          the key to efficiency in at least these three ways: it affects how
+          long it takes you to write code, how much of that code you’ll have to
+          write and how much loading your browser will have to do. This becomes
+          especially important when you’re working with teams of themers, and
+          when high performance is essential.
+        </p>
+        <p class="post__details text-lg">
+          On smaller brochure sites, how you organize your styles isn’t usually
+          a big concern. You get in there, write some CSS, or maybe even some
+          SASS. You compile it all into a single stylesheet with SASS’s
+          production settings, and then you aggregate it to get all the
+          stylesheets from modules into a nice tidy package. However, when it
+          comes to larger, more complex projects, how you organize your code is
+          the key to efficiency in at least these three ways: it affects how
+          long it takes you to write code, how much of that code you’ll have to
+          write and how much loading your browser will have to do. This becomes
+          especially important when you’re working with teams of themers, and
+          when high performance is essential.
+        </p>
+        <figure>
+          <img src="./images/post-detail.jpg" alt="" />
+          <figcaption class="text-sm">BEM by Example</figcaption>
+        </figure>
+        <p class="post__details text-lg">
+          BEM is a popular naming convention for CSS class names that we use
+          widely here at Sparkbox. The fundamental concepts of BEM are simple
+          and straightforward, but there are common errors those new to BEM make
+          that this post seeks to explain through a series of examples. On
+          smaller brochure sites, how you organize your styles isn’t usually a
+          big concern. You get in there, write some CSS, or maybe even some
+          SASS. You compile it all into a single stylesheet with SASS’s
+          production settings, and then you aggregate it to get all the
+          stylesheets from modules into a nice tidy package. However, when it
+          comes to larger, more complex projects, how you organize your code is
+          the key to efficiency in at least these three ways: it affects how
+          long it takes you to write code, how much of that code you’ll have to
+          write and how much loading your browser will have to do. This becomes
+          especially important when you’re working with teams of themers, and
+          when high performance is essential.
+        </p>
+        <div class="post__social-share">
+          <span class="post__share text-lg">Share this post:</span>
+          <div class="post__social-links">
+            <a href="" class="post__share-link">
+              <i class="ri-linkedin-box-fill"></i>
+            </a>
+            <a href="" class="post__share-link">
+              <i class="ri-facebook-box-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --------------------- Contact ----------------------------- -->
+    <section class="contact section" id="contact">
+      <div class="contact__content container">
+        <h2 class="section__title">Get in touch_</h2>
+        <div class="contact__container grid">
+          <div class="contact__info">
+            <dl class="contact__list">
+              <dt>Phone</dt>
+              <dd>161661565</dd>
+              <dt>Skype:</dt>
+              <dd>yasmfjof</dd>
+              <dt>Email:</dt>
+              <dd>yasmindonets@gmail.com</dd>
+              <dt></dt>
+              <dd></dd>
+            </dl>
+            <ul class="contact__socials">
+              <li>
+                <a
+                  href="https://github.com/yasmin-donets"
+                  class="contact__social-link"
+                  >Github</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/yasmin-donets/"
+                  class="contact__social-link"
+                  >Linkedin</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/donetsyasmine/"
+                  class="contact__social-link"
+                  >Facebook</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="contact__form">
+            <p class="contact__form-title">Or just write me a letter here_</p>
+            <form action="" id="contact-form">
+              <div class="contact__input-div">
+                <input
+                  type="text"
+                  name="name"
+                  name="Your name"
+                  class="contact__input"
+                  id="contact-name"
+                />
+              </div>
+              <div class="contact__input-div">
+                <input
+                  type="email"
+                  name="email"
+                  name="Your e-mail"
+                  class="contact__input"
+                  id="contact-email"
+                />
+              </div>
+              <div class="contact__input-div">
+                <textarea
+                  placeholder="Type the message here"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  class="contact__input textarea"
+                  name="message"
+                ></textarea>
+              </div>
+              <p class="contact__message text-sm" id="contact-message">
+                Message
+              </p>
+              <button type="submit" class="button contact__button">SEND</button>
+            </form>
+            <p class="footer__copy">
+              Copyright &amp;&amp; Yasmin Donets.All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --------------------- EMAIl JS ----------------------------- -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <!-- --------------------- JS ----------------------------- -->
+    <script src="./common.js"></script>
+  </body>
+</html>

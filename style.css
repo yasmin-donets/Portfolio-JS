@@ -101,8 +101,8 @@ input {
   display: grid;
 }
 .section {
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .section__title {
   font-size: var(--fs-h2);
@@ -449,6 +449,7 @@ input {
 
 .post__title {
   margin-bottom: 1.1em;
+  color: var(--text-color);
 }
 
 .post__description {
@@ -531,7 +532,7 @@ input {
   height: 7.2rem;
   resize: none;
 }
-.contact__input:focus{
+.contact__input:focus {
   box-shadow: inset 0 0 5px 0 #fff;
 }
 
@@ -545,34 +546,54 @@ input {
 .contact__button {
   margin-top: 1.875rem;
   width: 100%;
-  box-shadow:  0 1px 29px  rgb(0, 0, 0 / 40%);
+  box-shadow: 0 1px 29px rgb(0, 0, 0 / 40%);
 }
 .footer__copy {
   opacity: 0.4;
   margin-top: 3.75rem;
   text-align: center;
 }
-.color-light{
-  opacity: 1;
-}
-.color-dark{
+/* ----------------- Js classes ----------------- */
+.color-dark {
   opacity: 0.4;
 }
-.scroll-header{
+.color-light {
+  opacity: 1;
+}
+.scroll-header {
   position: fixed;
   background-color: var(--bg-color);
   box-shadow: 0 5px 8px 0 rgb(0, 0, 0 / 14%);
   transition: 0.3s;
 }
-.scroll-header .nav__link{
+.scroll-header .nav__link {
   color: var(--text-color);
 }
-.scroll-header .nav__link::after{
+.scroll-header .nav__link::after {
   background-color: var(--text-color);
 }
-.scroll-header .nav__link:hover,.scroll-header .active-link{
+.scroll-header .nav__link:hover,
+.scroll-header .active-link {
   color: var(--primary-color);
 }
-.scroll-header .nav{
+.scroll-header .nav {
   align-items: center;
+}
+/* ----------------- Blog Details ----------------- */
+
+.blog__header {
+  height: 400px;
+  background: url(./images/bg.jpg);
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+}
+.blog__header::before {
+  content: '';
+  background: var(--linear-gradient);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
