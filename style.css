@@ -59,7 +59,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--mono-font);
   font-weight: var(--bold);
 }
@@ -360,7 +361,7 @@ input {
   font-family: var(--mono-font);
   position: relative;
 }
-.category__btn :hover {
+.category__btn:hover {
   color: var(--primary-color);
 }
 .category__btn::after {
@@ -377,9 +378,48 @@ input {
 .category__btn:hover::after {
   opacity: 1;
 }
-.active-work{
-	color: var(--primary-color);
+.active-work {
+  color: var(--primary-color);
 }
-.active-work::after{
-	opacity: 1;
+.active-work::after {
+  opacity: 1;
+}
+.project__container {
+  row-gap: 2.5rem;
+}
+.project__item {
+  grid-template-columns: 5fr 7fr;
+}
+.project__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project__data {
+  padding: 3rem 3rem 2.5rem 1.875rem;
+  bottom: 1px solid var(--border-color);
+}
+.project__title {
+  margin-bottom: 0.8em;
+  text-align: justify;
+}
+.project__description {
+  margin-bottom: 2.5em;
+  text-align: justify;
+}
+.project__stack {
+  margin-bottom: 1.25em;
+}
+.tag li {
+  display: inline-block;
+  margin-right: 0.6rem;
+  box-shadow: 0 1px 4px rgb(0, 0, 0 / 14%);
+	padding: 0.3rem 0.6rem;
+	border-radius: 0.2rem;
+}
+.project__link{
+	float: right;
+	margin-top: 3.9em;
+	color: var(--primary-color);
+	font-family: var(--mono-font);
 }
