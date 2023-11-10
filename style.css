@@ -558,3 +558,21 @@ input {
 .color-dark{
   opacity: 0.4;
 }
+.scroll-header{
+  position: fixed;
+  background-color: var(--bg-color);
+  box-shadow: 0 5px 8px 0 rgb(0, 0, 0 / 14%);
+  transition: 0.3s;
+}
+.scroll-header .nav__link{
+  color: var(--text-color);
+}
+.scroll-header .nav__link::after{
+  background-color: var(--text-color);
+}
+.scroll-header .nav__link:hover,.scroll-header .active-link{
+  color: var(--primary-color);
+}
+.scroll-header .nav{
+  align-items: center;
+}
