@@ -597,3 +597,70 @@ input {
   left: 0;
   top: 0;
 }
+
+.blog__details {
+  background-color: #fff;
+  padding: 3rem 4.25rem 3.75rem;
+  margin-top: -16rem;
+  box-shadow: 0 1px 21px rgb(0, 0, 0 / 14%);
+  z-index: 10;
+  position: relative;
+}
+.back__to-home {
+  display: inline-flex;
+  column-gap: 0.6rem;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.ri-arrow-left-line {
+}
+.post__details-title {
+  text-transform: uppercase;
+  margin-top: 1.67em;
+  margin-bottom: 0.84em;
+}
+.post__details-date {
+  color: var(--text-color-alt);
+  margin-bottom: 1.12em;
+}
+
+.post__details {
+  margin-bottom: 1.12em;
+  text-align: justify;
+}
+figure{
+  padding-top: 0.625rem;
+  padding-bottom: 2.2rem;
+}
+figcaption{
+  color: var(--text-color-alt);
+  font-style: italic;
+  font-family: var(--mono-font);
+  margin-top: 1.4em;
+}
+.post__social-share {
+  display: inline-flex;
+  column-gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.post__share {
+  padding-top: -2px;
+  color: var(--text-color);
+}
+.post__share-link {
+  color: var(--title-color);
+  font-size: 1.75rem;
+  opacity: 0.4;
+  margin-right: 0.14em;
+}
+.post__share-link:hover {
+  color: var(--primary-color);
+  opacity: 1;
+}
+.ri-linkedin-box-fill {
+}
+.ri-facebook-box-fill {
+}
+
+/* ----------------- Blog Details ----------------- */
