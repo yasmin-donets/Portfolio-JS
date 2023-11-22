@@ -92,7 +92,7 @@ input {
 
 /* ----------------- Reuse Css ----------------- */
 .container {
-  max-width: 1140px;
+  max-width: 85%;
   margin: 0 auto;
   padding: 0.9rem;
   padding-right: 0.9rem;
@@ -435,7 +435,7 @@ input {
 
 .post__img {
   vertical-align: middle;
-  width: 350px;
+  width: 100%;
 }
 .post__content {
   border: 1px solid var(--border-color);
@@ -657,16 +657,9 @@ figcaption {
   color: var(--primary-color);
   opacity: 1;
 }
-.ri-linkedin-box-fill {
-}
-.ri-facebook-box-fill {
-}
 
-/* ----------------- Break Points----------------- */
-
-/*large devices*/
-
-@media screen and (max-width: 1200px) {
+/*------------------ BREAK POINTS MEDIA CSS ------------------------*/
+@media only screen and (max-width: 1200px) {
   :root {
     --fs-h1: 2.25rem;
     --fs-h2: 1.75rem;
@@ -674,9 +667,6 @@ figcaption {
     --fs-base: 0.938rem;
     --fs-sm: 0.813rem;
     --fs-xs: 0.687rem;
-  }
-  .container {
-    max-width: 960px;
   }
   .home__container {
     grid-template-columns: 5fr 7fr;
@@ -686,19 +676,12 @@ figcaption {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.875rem;
   }
-  .post__img {
-    width: 300px;
-  }
   .contact__message {
     bottom: 20%;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .container {
-    max-width: 720px;
-  }
-
   .nav__menu {
     position: fixed;
     top: 0;
@@ -713,7 +696,7 @@ figcaption {
     transform: translateX(-100%);
     transition: 0.3s;
   }
-  .show-menu{
+  .show-menu {
     transform: translateX(0);
   }
   .nav__list {
@@ -753,10 +736,14 @@ figcaption {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+  .skills__container,
   .project__item,
   .resume__container,
   .home__container {
     grid-template-columns: 1fr;
+  }
+  .skills__container {
+    row-gap: 3.75rem;
   }
   .resume__container {
     row-gap: 3.75rem;
@@ -765,9 +752,7 @@ figcaption {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 1.875rem;
   }
-  .post__img {
-    width: 350px;
-  }
+
   .contact__container {
     grid-template-columns: 5fr 7fr;
     column-gap: 2rem;
@@ -776,18 +761,9 @@ figcaption {
 
 /*medium devices*/
 @media screen and (max-width: 768px) {
-  .container {
-    max-width: 540px;
-  }
-
   .contact__container,
-  .posts__container,
-  .skills__container,
-  .home__container {
+  .posts__container {
     grid-template-columns: 1fr;
-  }
-  .post__img {
-    width: 515px;
   }
   .skills__container {
     row-gap: 3.75rem;
@@ -818,6 +794,7 @@ figcaption {
   :root {
     --fs-h1: 2rem;
   }
+
   .home__work {
     font-size: var(--fs-sm);
   }
@@ -830,7 +807,5 @@ figcaption {
   .home__socials-link {
     font-size: 1.3rem;
   }
-  .post__img {
-    width: 320px;
-  }
+
 }
