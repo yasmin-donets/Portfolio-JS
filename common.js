@@ -53,7 +53,7 @@ const sendEmail = (e) => {
     contactMessage.classList.remove('color-light');
     contactMessage.classList.add('color-dark');
     //show message
-    contactMessage.textContent = 'Write all the input fields';
+    contactMessage.textContent = 'Fill all inputs fields';
   } else {
     //serviceID - template
     emailjs
