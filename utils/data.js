@@ -2,7 +2,7 @@
 const projects = [
   {
     id: 1,
-    img: 'https://raw.githubusercontent.com/yasmin-donets/E-commerce-JS/main/images/Screenshot%202023-12-07%20133603.png',
+    img: 'https://raw.githubusercontent.com/yasmin-donets/E-commerce-JS/main/images/Screenshot%202023-12-07%20172656.png',
     title: 'Responsive Ecommerce Website Using HTML CSS & JavaScript. ',
     category: 'web-sites',
     desc: `Explore my responsive e-commerce website, a dynamic and user-friendly platform meticulously crafted using HTML, CSS, and JavaScript. This project seamlessly integrates the Fake Store API, providing a realistic shopping experience with a vast array of products.Navigate through the  product catalog effortlessly using the advanced filtering system. Refine your search based on categories, prices, or other criteria, enhancing the efficiency of your shopping experience.`,
