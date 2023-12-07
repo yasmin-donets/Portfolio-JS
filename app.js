@@ -16,7 +16,7 @@ function displayProjects(projectItems) {
     .map((item) => {
       return `
 <div class="project__item grid">
-	<img src="./images/project-1.png" alt="" class="project__img" />
+	<img src="${item.img}" alt="" class="project__img" />
 	<div class="project__data">
 		<h3 class="project__title text-lg">${item.title}</h3>
 		<p class="project__description">
