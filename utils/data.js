@@ -2,7 +2,7 @@
 const projects = [
   {
     id: 1,
-    img: './images/item-1.jpeg',
+    img: 'https://github.com/yasmin-donets/E-commerce-JS/blob/main/images/picture.png?raw=true',
     title: 'web-sites',
     category: 'web-sites',
     desc: `My project is a user-friendly web application that provides real-time weather information for any desired location. With seamless integration of OpenWeatherMap API. An intuitive interface ensures a smooth user experience, making staying informed about weather conditions a hassle-free task. Built With : HTML & CSS Javascript OpenWeatherMap API`,
