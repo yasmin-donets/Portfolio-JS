@@ -32,7 +32,7 @@ function displayProjects(projectItems) {
 			<li>React</li>
 		</ul>
 		<a href="" class="project__link text-sm"
-			>https://remixicon.com/icon/download-line</a
+			>${item.url}</a
 		>
 	</div>
 </div>
