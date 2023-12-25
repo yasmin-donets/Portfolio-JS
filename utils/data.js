@@ -24,5 +24,13 @@ const projects = [
     desc: `This is a JavaScript based project, which is basically a To-Do list app. This app can perform adding and modifying, deleting todos. Also there is a count of done todods. All of the functionality of this app is written using JavaScript.`,
     url: 'https://todo-app-yd.netlify.app/',
   },
+  {
+    id: 4,
+    img: 'https://github.com/yasmin-donets/Todo-App-React/blob/main/Screenshot%202023-12-25%20165136.jpg?raw=true',
+    title: 'Todo-App-React',
+    category: 'web-apps',
+    desc: `This is a React App based project, which is basically a To-Do list app. This app can perform adding and modifying, deleting todos,completing todos, saving to the local storage, load the todos from Local Storage when the site is loaded again`,
+    url: 'https://todo-react-yd.netlify.app/',
+  },
 ];
 export default projects;
